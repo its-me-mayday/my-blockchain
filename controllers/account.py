@@ -22,13 +22,15 @@ class AccountController:
         self.logger.debug(f"Return Account: {account}")
         return account
 
-    def deposit(self, account: Account, coin: float):
-        self.logger.info("Call deposit function of AccountService")
+    def deposit(self, account: Account, amount: float):
+        self.logger.info("Call deposit function of WalletService")
         try:
-            self.service.deposit(account, coin)
+            deposit_result = self.wallet_service.deposit(account, amount)
+            self.logger.debug(f"Deposit result: {deposit_result}")
         except Exception as e:
             self.logger.error(f"We have an Exception: {e}")
             raise
+        return deposit_result
 
     def transfer(self, sender: Account, receiver: Account, amount: float):
         self.logger.info(

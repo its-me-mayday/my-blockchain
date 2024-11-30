@@ -59,5 +59,21 @@ class WalletService:
 
         return True
 
-    def _is_affordable(self, wallet, amount):
+    def deposit(self, account: Account, amount: float):
+        self.logger.info(
+            f"{account} is depositing {amount} coins in its wallet."
+        )
+        try:
+            wallet = account.account_wallet.wallet
+            self.logger.debug(f"{account} has wallet {wallet}")
+            wallet.amount += amount
+            self.logger.debug(
+                f"{account} increases {wallet} "
+                f"balance with {amount} coins."
+            )
+        except Exception as e:
+            self.logger.error(f"We have an Exception: {e}")
+            raise
+
+    def _is_affordable(self, wallet: Wallet, amount: float):
         return True if wallet.amount - amount >= 0 else False

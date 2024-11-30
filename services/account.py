@@ -17,19 +17,3 @@ class AccountService:
             f"is created succesfully! reference: {account}"
         )
         return account
-
-    def deposit(self, account: Account, amount: float):
-        self.logger.info(
-            f"{account} is depositing {amount} coins in its wallet."
-        )
-        try:
-            wallet = account.account_wallet.wallet
-            self.logger.debug(f"{account} has wallet {wallet}")
-            wallet.amount += amount
-            self.logger.debug(
-                f"{account} increases {wallet} "
-                f"balance with {amount} coins."
-            )
-        except Exception as e:
-            self.logger.error(f"We have an Exception: {e}")
-            raise
