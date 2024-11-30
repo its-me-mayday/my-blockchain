@@ -10,7 +10,7 @@ class WalletController:
     def create_wallet(self, account: Account):
         self.logger.info("Call create function of WalletService")
         try:
-            self.service.create_for(account)
+            self.service.create_wallet(account)
         except Exception as e:
             self.logger.error(f"We have an Exception: {e}")
             raise

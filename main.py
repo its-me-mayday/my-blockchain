@@ -1,13 +1,15 @@
 from configs.logger import logger
-from controllers.account import AccountController
-from controllers.wallet import WalletController
+from controllers.factories import (
+    create_account_controller,
+    create_wallet_controller,
+)
 
 
 def main():
-    logger.info("A sends to B 1 MC (without gasfee)")
+    logger.info("Simulation: A sends to B 10 MC (without gasfee)")
 
-    account_controller = AccountController(logger)
-    wallet_controller = WalletController(logger)
+    account_controller = create_account_controller(logger)
+    wallet_controller = create_wallet_controller(logger)
 
     accountA = account_controller.create_account("Alex")
     logger.info(f"Create Account {accountA}")
