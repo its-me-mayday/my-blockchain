@@ -1,10 +1,15 @@
 <div align="left">
 <pre>
-██   ██ ██  ██        ██████ ██      ████   ████  ██  ██  ████  ██  ██   ██   ██████ ██   ██
-███ ███  ████         ██   █ ██     ██  ██ ██     ██ ██  ██     ██  ██  ████    ██   ███  ██
-██ █ ██   ██   ██████ ██████ ██     ██  ██ ██     ████   ██     ██████ ██  ██   ██   ██ █ ██
-██   ██   ██          ██   █ ██     ██  ██ ██     ██ ██  ██     ██  ██ ██████   ██   ██  ███
-██   ██   ██          ██████ ██████  ████   ████  ██  ██  ████  ██  ██ ██  ██ ██████ ██   ██
+╔═════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                                 ║
+║  ██   ██ ██  ██        ██████ ██      ████   ████  ██  ██  ████  ██  ██   ██   ██████ ██   ██   ║
+║  ███ ███  ████         ██   █ ██     ██  ██ ██     ██ ██  ██     ██  ██  ████    ██   ███  ██   ║
+║  ██ █ ██   ██   ██████ ██████ ██     ██  ██ ██     ████   ██     ██████ ██  ██   ██   ██ █ ██   ║
+║  ██   ██   ██          ██   █ ██     ██  ██ ██     ██ ██  ██     ██  ██ ██████   ██   ██  ███   ║
+║  ██   ██   ██          ██████ ██████  ████   ████  ██  ██  ████  ██  ██ ██  ██ ██████ ██   ██   ║
+║                                                                                                 ║
+║                                                                                                 ║
+╚═════════════════════════════════════════════════════════════════════════════════════════════════╝
 </pre>
 </div>
 <p align="left">
@@ -62,16 +67,17 @@
     ├── configs
     │   └── logger.py
     ├── controllers
-    │   ├── account_controller.py
-    │   └── wallet_controller.py
+    │   ├── account.py
+    │   ├── factories.py
+    │   └── wallet.py
     ├── main.py
     ├── models
     │   ├── account_wallet.py
     │   ├── block_model.py
     │   └── transaction_model.py
     └── services
-        ├── account_service.py
-        └── wallet_service.py
+        ├── account.py
+        └── wallet.py
 ```
 
 
@@ -94,11 +100,11 @@
 		<blockquote>
 			<table>
 			<tr>
-				<td><b><a href='https://github.com/its-me-mayday/my-blockchain/blob/master/services/wallet_service.py'>wallet_service.py</a></b></td>
+				<td><b><a href='https://github.com/its-me-mayday/my-blockchain/blob/master/services/wallet.py'>wallet.py</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			<tr>
-				<td><b><a href='https://github.com/its-me-mayday/my-blockchain/blob/master/services/account_service.py'>account_service.py</a></b></td>
+				<td><b><a href='https://github.com/its-me-mayday/my-blockchain/blob/master/services/account.py'>account.py</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			</table>
@@ -128,11 +134,15 @@
 		<blockquote>
 			<table>
 			<tr>
-				<td><b><a href='https://github.com/its-me-mayday/my-blockchain/blob/master/controllers/wallet_controller.py'>wallet_controller.py</a></b></td>
+				<td><b><a href='https://github.com/its-me-mayday/my-blockchain/blob/master/controllers/wallet.py'>wallet.py</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			<tr>
-				<td><b><a href='https://github.com/its-me-mayday/my-blockchain/blob/master/controllers/account_controller.py'>account_controller.py</a></b></td>
+				<td><b><a href='https://github.com/its-me-mayday/my-blockchain/blob/master/controllers/factories.py'>factories.py</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/its-me-mayday/my-blockchain/blob/master/controllers/account.py'>account.py</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			</table>
