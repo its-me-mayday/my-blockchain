@@ -69,14 +69,15 @@
     ├── controllers
     │   ├── account.py
     │   ├── factories.py
+    │   ├── transaction.py
     │   └── wallet.py
     ├── main.py
     ├── models
     │   ├── account_wallet.py
-    │   ├── block_model.py
-    │   └── transaction_model.py
+    │   └── transaction.py
     └── services
         ├── account.py
+        ├── transaction.py
         └── wallet.py
 ```
 
@@ -104,6 +105,10 @@
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			<tr>
+				<td><b><a href='https://github.com/its-me-mayday/my-blockchain/blob/master/services/transaction.py'>transaction.py</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
 				<td><b><a href='https://github.com/its-me-mayday/my-blockchain/blob/master/services/account.py'>account.py</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
@@ -115,11 +120,7 @@
 		<blockquote>
 			<table>
 			<tr>
-				<td><b><a href='https://github.com/its-me-mayday/my-blockchain/blob/master/models/transaction_model.py'>transaction_model.py</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
-			</tr>
-			<tr>
-				<td><b><a href='https://github.com/its-me-mayday/my-blockchain/blob/master/models/block_model.py'>block_model.py</a></b></td>
+				<td><b><a href='https://github.com/its-me-mayday/my-blockchain/blob/master/models/transaction.py'>transaction.py</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			<tr>
@@ -135,6 +136,10 @@
 			<table>
 			<tr>
 				<td><b><a href='https://github.com/its-me-mayday/my-blockchain/blob/master/controllers/wallet.py'>wallet.py</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/its-me-mayday/my-blockchain/blob/master/controllers/transaction.py'>transaction.py</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			<tr>
