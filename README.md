@@ -209,9 +209,9 @@ echo 'INSERT-TEST-COMMAND-HERE'
 ---
 ## 📌 Project Roadmap
 
-- [X] **`Task 1`**: <strike>Implement feature one.</strike>
-- [ ] **`Task 2`**: Implement feature two.
-- [ ] **`Task 3`**: Implement feature three.
+- [X] **`Task 1`**: <strike>Implement Account and Wallet feature.</strike>
+- [X] **`Task 2`**: <strike>Implement Transaction basic feature.</strike>
+- [ ] **`Task 3`**: Implement Block basic feature.
 
 ---
 
