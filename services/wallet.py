@@ -5,7 +5,7 @@ class WalletService:
     def __init__(self, logger):
         self.logger = logger
 
-    def create_for(self, account: Account):
+    def create_wallet(self, account: Account):
         wallet = Wallet(account)
         self.logger.info(
             f"Wallet with code: {wallet.code} "

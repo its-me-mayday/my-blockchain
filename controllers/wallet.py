@@ -7,7 +7,7 @@ class WalletController:
         self.service = WalletService(logger)
         self.logger = logger
 
-    def create_for(self, account: Account):
+    def create_wallet(self, account: Account):
         self.logger.info("Call create function of WalletService")
         try:
             self.service.create_for(account)
