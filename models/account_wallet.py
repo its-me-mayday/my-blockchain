@@ -22,6 +22,9 @@ class Account:
     def account_wallet(self, new_account_wallet):
         self._account_wallet = new_account_wallet
 
+    def __repr__(self):
+        return f"Account(username: {self.username})"
+
 
 class Wallet:
     def __init__(self, account: Account):
@@ -54,6 +57,9 @@ class Wallet:
     def _check_balance(self, coins):
         return (self._amount - coins) >= 0
 
+    def __repr__(self):
+        return f"Wallet(code: {self.code}, amount: {self.amount})"
+
 
 class AccountWallet:
     def __init__(self, account: Account, wallet: Wallet = None):
@@ -71,3 +77,6 @@ class AccountWallet:
     @wallet.setter
     def wallet(self, new_wallet: Wallet):
         self._wallet = new_wallet
+
+    def __repr__(self):
+        return f"AccountWallet(account: {self.account}, wallet: {self.wallet})"
