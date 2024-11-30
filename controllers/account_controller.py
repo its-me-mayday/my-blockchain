@@ -7,4 +7,9 @@ class AccountController:
         self.logger = logger
 
     def deposit(self, coin: float):
-        self.service.deposit(coin)
+        self.logger.info("Call deposit function of AccountService")
+        try:
+            self.service.deposit(coin)
+        except Exception as e:
+            self.logger.error(f"We have an Exception: {e}")
+            raise

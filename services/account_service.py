@@ -7,9 +7,19 @@ class AccountService:
         self.logger = logger
 
     def deposit(self, coin: float):
-        wallet = self.account.wallet
-        wallet.add(coin)
-        self.logger.debug(
-            f"Wallet {wallet.code} increases our balance to {wallet.amount} "
-            f"MAYDAY coins. The deposit is {coin} MAYDAY coins"
+        self.logger.info(
+            f"{self.account.username} is depositing {coin} MAYDAY coins"
         )
+        try:
+            wallet = self.account.wallet
+            self.logger.info(
+                f"{self.account.username} has wallet {wallet.code}"
+            )
+            wallet.add(coin)
+            self.logger.info(
+                f"{self.account.username} increases wallet {wallet.code} "
+                f"balance with {coin} MAYDAY coins."
+            )
+        except Exception as e:
+            self.logger.error(f"We have an Exception: {e}")
+            raise
