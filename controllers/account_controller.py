@@ -7,4 +7,4 @@ class AccountController:
         self.logger = logger
 
     def deposit(self, coin: float):
-        self.service.exec_deposit(coin)
+        self.service.deposit(coin)

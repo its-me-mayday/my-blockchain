@@ -11,34 +11,34 @@ def main():
     logger.info(f"Create Wallet {walletA}")
     logger.debug(
         f"WalletA has name: {walletA.code} "
-        "and has {walletA.amount} MAYDAY coins"
+        f"and has {walletA.amount} MAYDAY coins"
     )
     walletB = Wallet()
     logger.info(f"Create Wallet {walletB}")
     logger.debug(
         f"WalletB has name: {walletB.code} "
-        "and has {walletB.amount} MAYDAY coins"
+        f"and has {walletB.amount} MAYDAY coins"
     )
 
     accountA = Account("Alex", walletA)
     logger.info(f"Create Account {accountA}")
     logger.debug(
         f"AccountA has username: {accountA.username} "
-        "and his wallet is the following: {accountA.wallet.code}"
+        f"and his wallet is the following: {accountA.wallet.code}"
     )
     accountB = Account("Bob", walletB)
     logger.info(f"Create Account {accountB}")
     logger.debug(
         f"AccountB has username: {accountB.username} "
-        "and his wallet is the following: {accountB.wallet.code}"
+        f"and his wallet is the following: {accountB.wallet.code}"
     )
 
     serviceA = AccountService(accountA, logger)
     controllerA = AccountController(serviceA, logger)
     controllerA.deposit(10)
     logger.debug(
-        f"WalletA has name: {walletA.code} "
-        "and has {walletA.amount} MAYDAY coins"
+        f"WalletA has name: {accountA.wallet.code} "
+        f"and has {accountA.wallet.amount} MAYDAY coins"
     )
 
 

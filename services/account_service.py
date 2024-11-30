@@ -6,7 +6,7 @@ class AccountService:
         self.account = account
         self.logger = logger
 
-    def exec_deposit(self, coin: float):
+    def deposit(self, coin: float):
         wallet = self.account.wallet
         wallet.add(coin)
         self.logger.debug(
