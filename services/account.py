@@ -5,7 +5,7 @@ class AccountService:
     def __init__(self, logger):
         self.logger = logger
 
-    def create_account(self, username: str):
+    def create(self, username: str):
         try:
             account = Account(username)
         except Exception as e:

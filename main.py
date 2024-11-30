@@ -11,9 +11,9 @@ def main():
     account_controller = create_account_controller(logger)
     wallet_controller = create_wallet_controller(logger)
 
-    accountA = account_controller.create_account("Alex")
+    accountA = account_controller.create("Alex")
     logger.info(f"Create Account {accountA}")
-    accountB = account_controller.create_account("Bob")
+    accountB = account_controller.create("Bob")
     logger.info(f"Create Account {accountB}")
 
     wallet_controller.create_wallet(accountA)

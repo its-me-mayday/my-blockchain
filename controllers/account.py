@@ -11,10 +11,10 @@ class AccountController:
         self.transaction_service = TransactionService(logger)
         self.logger = logger
 
-    def create_account(self, username: str):
+    def create(self, username: str):
         self.logger.info("Call create function of AccountService")
         try:
-            account = self.service.create_account(username)
+            account = self.service.create(username)
         except Exception as e:
             self.logger.error(f"We have an Exception: {e}")
             raise
