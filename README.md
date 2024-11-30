@@ -48,7 +48,16 @@
 
 ## 📍 Overview
 
-<code>❯ REPLACE-ME</code>
+This project is a Python-based simulation of a simple blockchain system. It provides the ability to create:
+
+- Accounts: Manage user identities.
+- Wallets: Attach wallets to accounts for transaction management.
+- Transactions: Facilitate the transfer of currency between accounts.
+- Blocks: Record transactions securely in a blockchain structure.
+
+The architecture is designed with controllers for handling logic and services for specific domain tasks, promoting clean code and modularity. Ideal for learning and experimenting with blockchain principles.
+
+Feel free to contribute or suggest improvements!
 
 ---
 
