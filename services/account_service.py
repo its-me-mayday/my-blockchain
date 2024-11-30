@@ -1,4 +1,4 @@
-from models.account_model import Account
+from models.account_wallet import Account
 
 
 class AccountService:
@@ -11,7 +11,7 @@ class AccountService:
             f"{self.account.username} is depositing {coin} MAYDAY coins"
         )
         try:
-            wallet = self.account.wallet
+            wallet = self.account.account_wallet.wallet
             self.logger.info(
                 f"{self.account.username} has wallet {wallet.code}"
             )

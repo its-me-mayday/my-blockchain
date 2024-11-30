@@ -1,4 +1,4 @@
-from models.account_model import Account
+from models.account_wallet import Account
 
 
 class Transaction:
