@@ -11,7 +11,7 @@ class CustomFormatter(logging.Formatter):
 
 
 def setup_logger():
-    logger = logging.getLogger("harbor_sync")
+    logger = logging.getLogger("my-blockchain")
     logger.setLevel(logging.DEBUG)
 
     formatter = CustomFormatter(
