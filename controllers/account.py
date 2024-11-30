@@ -1,4 +1,4 @@
-from services.account_service import AccountService
+from services.account import AccountService
 
 
 class AccountController:

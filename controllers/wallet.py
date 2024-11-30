@@ -1,5 +1,5 @@
 from models.account_wallet import Account
-from services.wallet_service import WalletService
+from services.wallet import WalletService
 
 
 class WalletController:

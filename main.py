@@ -1,8 +1,8 @@
 from configs.logger import logger
-from controllers.account_controller import AccountController
-from controllers.wallet_controller import WalletController
+from controllers.account import AccountController
+from controllers.wallet import WalletController
 from models.account_wallet import Account
-from services.account_service import AccountService
+from services.account import AccountService
 
 
 def main():
