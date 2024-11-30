@@ -11,7 +11,6 @@ class TransactionController:
         self.logger.info("Call create function of TransactionService")
         try:
             transaction = self.service.create(sender, receiver, amount)
-            transaction.success = True
         except Exception as e:
             self.logger.error(f"We have an Exception: {e}")
             raise

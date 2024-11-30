@@ -2,7 +2,6 @@ from configs.logger import logger
 from controllers.factories import (
     create_account_controller,
     create_wallet_controller,
-    create_transaction_controller,
 )
 
 
@@ -11,7 +10,6 @@ def main():
 
     account_controller = create_account_controller(logger)
     wallet_controller = create_wallet_controller(logger)
-    transaction_controller = create_transaction_controller(logger)
 
     accountA = account_controller.create_account("Alex")
     logger.info(f"Create Account {accountA}")
@@ -25,7 +23,14 @@ def main():
 
     account_controller.deposit(accountA, 10)
 
-    transaction_controller.create(accountA, accountB, 10.0)
+    logger.info(f"{accountA.account_wallet}")
+    logger.info(f"{accountB.account_wallet}")
+    account_controller.transfer(accountA, accountB, 7)
+    logger.info(f"{accountA.account_wallet}")
+    logger.info(f"{accountB.account_wallet}")
+    account_controller.transfer(accountA, accountB, 7)
+    logger.info(f"{accountA.account_wallet}")
+    logger.info(f"{accountB.account_wallet}")
 
 
 if __name__ == "__main__":

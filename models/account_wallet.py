@@ -36,6 +36,10 @@ class Wallet:
     def amount(self):
         return self._amount
 
+    @amount.setter
+    def amount(self, new_amount):
+        self._amount = new_amount
+
     @property
     def code(self):
         return self._code
@@ -43,19 +47,6 @@ class Wallet:
     @property
     def account(self):
         return self._account
-
-    def add(self, coins):
-        self._amount += coins
-
-    def remove(self, coins):
-        self._amount -= (
-            coins
-            if self._check_balance()
-            else print("Not sufficiently funds!")
-        )
-
-    def _check_balance(self, coins):
-        return (self._amount - coins) >= 0
 
     def __repr__(self):
         return f"Wallet(code: {self.code}, amount: {self.amount})"

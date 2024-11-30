@@ -1,4 +1,5 @@
 from models.account_wallet import Account
+import time
 
 
 class Transaction:
@@ -6,7 +7,8 @@ class Transaction:
         self._sender = sender
         self._receiver = receiver
         self._amount = amount
-        self._success = False
+        self._created_at = time.asctime()
+        self._updated_at = time.asctime()
 
     @property
     def sender(self):
@@ -21,13 +23,21 @@ class Transaction:
         return self._amount
 
     @property
-    def success(self):
-        return self._success
+    def created_at(self):
+        return self._created_at
 
-    @success.setter
-    def success(self, new_success):
-        self._success = new_success
+    @property
+    def updated_at(self):
+        return self._updated_at
+
+    @updated_at.setter
+    def updated_at(self, new_update_at):
+        self._update_at = new_update_at
 
     def __repr__(self):
-        return f"Transaction(from: {self.sender}, "
-        f"to: {self.receiver}, amount: {self.amount})"
+        return (
+            f"Transaction(from: {self.sender}, "
+            f"to: {self.receiver}, amount: {self.amount}, "
+            f"created_at: {self._created_at}, "
+            f"updated_at: {self._updated_at})"
+        )
