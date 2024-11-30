@@ -1,23 +1,26 @@
 <div align="left">
-    <img src="https://drive.google.com/file/d/1CAhETwuuIEfm9f22uinX-ML6PA1dFD_s/view?usp=sharing" width="40%" align="left" style="margin-right: 15px"/>
-    <div style="display: inline-block;">
-        <h2 style="display: inline-block; vertical-align: middle; margin-top: 0;">MY-BLOCKCHAIN</h2>
-        <p>
+<pre>
+██   ██ ██  ██        ██████ ██      ████   ████  ██  ██  ████  ██  ██   ██   ██████ ██   ██
+███ ███  ████         ██   █ ██     ██  ██ ██     ██ ██  ██     ██  ██  ████    ██   ███  ██
+██ █ ██   ██   ██████ ██████ ██     ██  ██ ██     ████   ██     ██████ ██  ██   ██   ██ █ ██
+██   ██   ██          ██   █ ██     ██  ██ ██     ██ ██  ██     ██  ██ ██████   ██   ██  ███
+██   ██   ██          ██████ ██████  ████   ████  ██  ██  ████  ██  ██ ██  ██ ██████ ██   ██
+</pre>
+</div>
+<p align="left">
 	<em><code>❯ REPLACE-ME</code></em>
 </p>
-        <p>
+<p align="left">
 	<img src="https://img.shields.io/github/license/its-me-mayday/my-blockchain?style=flat-square&logo=opensourceinitiative&logoColor=white&color=A931EC" alt="license">
 	<img src="https://img.shields.io/github/last-commit/its-me-mayday/my-blockchain?style=flat-square&logo=git&logoColor=white&color=A931EC" alt="last-commit">
 	<img src="https://img.shields.io/github/languages/top/its-me-mayday/my-blockchain?style=flat-square&color=A931EC" alt="repo-top-language">
 	<img src="https://img.shields.io/github/languages/count/its-me-mayday/my-blockchain?style=flat-square&color=A931EC" alt="repo-language-count">
 </p>
-        <p>Built with the tools and technologies:</p>
-        <p>
+<p align="left">Built with the tools and technologies:</p>
+<p align="left">
 	<img src="https://img.shields.io/badge/Python-3776AB.svg?style=flat-square&logo=Python&logoColor=white" alt="Python">
 </p>
-    </div>
-</div>
-<br clear="left"/>
+<br>
 
 <details><summary>Table of Contents</summary>
 
@@ -55,6 +58,7 @@
 ```sh
 └── my-blockchain/
     ├── LICENSE
+    ├── README.md
     ├── configs
     │   └── logger.py
     ├── controllers
