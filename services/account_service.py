@@ -11,5 +11,5 @@ class AccountService:
         wallet.add(coin)
         self.logger.debug(
             f"Wallet {wallet.code} increases our balance to {wallet.amount} "
-            "MAYDAY coins. The deposit is {coin} MAYDAY coins"
+            f"MAYDAY coins. The deposit is {coin} MAYDAY coins"
         )
