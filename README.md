@@ -13,7 +13,7 @@
 </pre>
 </div>
 <p align="left">
-	<em><code>❯ REPLACE-ME</code></em>
+	<em>🚀 Build your own blockchain from scratch! This project demonstrates the creation of a simple, functional blockchain in Python. Whether you're a blockchain enthusiast or a developer curious about decentralized technology, this project provides a hands-on introduction to the fundamentals of blockchain systems.</em>
 </p>
 <p align="left">
 	<img src="https://img.shields.io/github/license/its-me-mayday/my-blockchain?style=flat-square&logo=opensourceinitiative&logoColor=white&color=A931EC" alt="license">
